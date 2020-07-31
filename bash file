@@ -1,0 +1,28 @@
+import requests, json 
+import os
+import time,random
+city_name = input("Enter city name : ") 
+base_url = "http://api.openweathermap.org/data/2.5/weather?"
+api_key = "f120ef6d29c9f9e3c8146054e48570b5"
+complete_url = base_url + "appid=" + api_key + "&q=" + city_name 
+url = "http://api.openweathermap.org/data/2.5/weather?"
+response = requests.get(complete_url) 
+x = response.json() 
+if x["cod"] != "404":  
+    z = x["weather"] 
+    weather_description = z[0]["description"] 
+    t=str(weather_description)
+    print(str(weather_description))
+else: 
+    print(" City Not Found ")
+cur_time=(int)((datetime.time(datetime.now())).hour
+ print(cur_time)
+# print(t)
+if(cur_time>=4)and(cur_time<12)
+t=morning+"."+"mist"
+else 
+t=haze
+p=os.getcwd()
+print(p)
+os.system("gsettings set org.gnome.desktop.background picture-uri "+p+"/"+t)
+    time.sleep(20)
